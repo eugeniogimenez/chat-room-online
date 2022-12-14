@@ -3,10 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //El CLIENTE es POSTMAN, y nosotros el SERVIDOR
 const nanoid_1 = require("nanoid"); //importo nano id
 const db_1 = require("./db"); //importo la DB
-//EXPRESS
+//EXPRESS y PROCESS
 const express = require("express");
+const process = require("process");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(express.json()); //parsea el body que le enviamos (req.body)
 //CORS
 const cors = require("cors"); //importo cors (permite al navegador usar apis)
@@ -17,7 +18,7 @@ const roomsCollection = db_1.firestore.collection("rooms");
 //ENDPOINTS
 app.get("/env", (req, res) => {
     res.json({
-        environment: process.env.NODE_ENV,
+        environment: process.env.ENV,
     });
 });
 //1−SIGNUP: le doy de alta a un usuario
@@ -169,4 +170,6 @@ app.get("*", (req, res) => {
 });
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
+    console.log(process.env.ENV);
+    console.log(process.env.PORT);
 });
