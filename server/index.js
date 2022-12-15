@@ -19,6 +19,7 @@ const roomsCollection = db_1.firestore.collection("rooms");
 app.get("/env", (req, res) => {
     res.json({
         environment: process.env.ENV,
+        back: process.env.BACKEND_URL,
     });
 });
 //1−SIGNUP: le doy de alta a un usuario

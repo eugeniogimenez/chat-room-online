@@ -3,7 +3,7 @@ import { ref, onValue } from "firebase/database";
 
 import { Router } from "@vaadin/router";
 
-import _ from "lodash";
+// import _ from "lodash";
 
 const API_BASE_URL = process.env.BACKEND_URL || "http://localhost:3000";
 

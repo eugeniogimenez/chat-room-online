@@ -25,6 +25,7 @@ const roomsCollection = firestore.collection("rooms");
 app.get("/env", (req, res) => {
   res.json({
     environment: process.env.ENV,
+    back: process.env.BACKEND_URL,
   });
 });
 
@@ -190,4 +191,5 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
   console.log(process.env.ENV);
   console.log(process.env.PORT);
+  console.log(__dirname + "/dist/index.html");
 });
