@@ -189,7 +189,7 @@ app.get("*", (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
-  console.log(process.env.ENV);
-  console.log(process.env.PORT);
-  console.log(__dirname + "/dist/index.html");
+  console.log("ENV: ", process.env.ENV);
+  console.log("PORT: ", process.env.PORT);
+  console.log("DIRNAME: ", __dirname + "/dist/index.html");
 });
