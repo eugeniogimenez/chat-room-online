@@ -3,6 +3,8 @@ import { nanoid } from "nanoid"; //importo nano id
 
 import { firestore, rtdb } from "./db"; //importo la DB
 
+import * as path from "path";
+
 //EXPRESS y PROCESS
 import * as express from "express";
 import * as process from "process";
@@ -180,11 +182,12 @@ app.post("/rooms/:roomLongId", function (req, res) {
 });
 
 //EXPRESS STATIC
+//Servi todos los archivos dentro de la carpeta "dist"
 app.use(express.static("dist"));
 
 //RETURN TO index.html
 app.get("*", (req, res) => {
-  res.sendFile(__dirname + "/dist/index.html");
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
 app.listen(port, () => {
