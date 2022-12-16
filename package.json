@@ -23,7 +23,7 @@
     "build:front": "parcel build ./client/index.html",
     "build:back": "tsc",
     "build": "yarn build:front && yarn build:back",
-    "start": "node ./server-dist/server/index.js"
+    "start": "node ./server/index.js"
   },
   "devDependencies": {
     "process": "^0.11.10",
