@@ -166,11 +166,10 @@ app.post("/rooms/:roomLongId", function (req, res) {
 });
 //EXPRESS STATIC
 //Servi todos los archivos dentro de la carpeta "dist"
-app.use(express.static(path.join(__dirname, "../dist")));
+app.use(express.static("dist"));
 //RETURN TO index.html
 app.get("*", (req, res) => {
-    // res.sendFile(__dirname + "../dist/index.html");
-    res.sendFile(path.join(__dirname, "../dist/index.html"));
+    res.send(path.join(__dirname, "../dist/index.html"));
 });
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
