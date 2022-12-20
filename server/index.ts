@@ -183,7 +183,7 @@ app.post("/rooms/:roomLongId", function (req, res) {
 
 //EXPRESS STATIC
 //Servi todos los archivos dentro de la carpeta "dist"
-app.use(express.static("dist"));
+app.use(express.static(path.join(__dirname, "../dist")));
 
 //RETURN TO index.html
 app.get("*", (req, res) => {
@@ -195,6 +195,8 @@ app.listen(port, () => {
   console.log("ENV: ", process.env.ENV);
   console.log("PORT: ", process.env.PORT);
   console.log("DIRNAME: ", path.join(__dirname, "../dist/index.html"));
-  console.log("DIRNAME: ", path.join(__dirname, "../dist"));
+  console.log("DIRNAME: ", path.join(__dirname, "../dist/casa"));
   console.log("DIRNAME: ", __dirname);
+  console.log("DIRNAME: ", __filename);
+  console.log(path.join(__dirname, "../dist"));
 });
