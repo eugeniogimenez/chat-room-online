@@ -1,5 +1,5 @@
 import { state } from "./state";
-import "../server/router";
+import "./router";
 
 //components
 import "./components/button";
