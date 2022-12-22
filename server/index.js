@@ -173,11 +173,4 @@ app.get("*", (req, res) => {
 });
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
-    console.log("ENV: ", process.env.ENV);
-    console.log("PORT: ", process.env.PORT);
-    console.log("DIRNAME: ", path.join(__dirname, "../dist/index.html"));
-    console.log("DIRNAME: ", path.join(__dirname, "../dist/casa"));
-    console.log("DIRNAME: ", __dirname);
-    console.log("DIRNAME: ", __filename);
-    console.log(path.join(__dirname, "../dist"));
 });
