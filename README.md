@@ -1,4 +1,4 @@
-# CHATROOM ONLINE (TypeScript - Node.js)
+# CHATROOM ONLINE (TypeScript <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>- Node.js <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>)
 
 ## Descripcion General:
 El proyecto consiste en un **"chat"**, en donde los participantes se pueden conectar desde dos dispositivos distintos e interactuar en tiempo real.
@@ -14,32 +14,22 @@ La sala de prueba es:
 > IMPORTANTE: al usarse un servidor de pruebas (Clever Cloud) se debe tener paciencia en cuanto a la carga de información ya que puede tener demoras. IMPORTANTE: al usarse un servidor de pruebas (Clever Cloud) se debe tener paciencia en cuanto a la carga de información ya que puede tener demoras.
 
 ## Front:
-Se utiliza como base Typescript y se trabaja bajo la arquitectura de Pages y Web Components, los cuales se renderizan vía Router, y gracias al usu de un Stage Manager, los mismos van intercambiando información.
+Se utiliza como base Typescript <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="20" height="20"/> </a>y se trabaja bajo la arquitectura de Pages y Web Components, los cuales se renderizan vía Router, y gracias al usu de un Stage Manager, los mismos van intercambiando información.
 
 En cuánto al consumo de datos en relación al back, se utiliza "fetch" para consumo de las API´s proporcionadas.
 
 ## Back:
-El back se construye básicamente con Node.js, proporcionando API´s para consumo del Front via fetch, y conectandose a una base de datos NoSQL como es Firebase.
+El back se construye básicamente con Node.js <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="20" height="20"/> </a>, proporcionando API´s para consumo del Front via fetch, y conectandose a una base de datos NoSQL como es Firebase.
 
-- ##### JAVA 
-- ##### Servlets
-- ##### Docker 
-- ##### MySQL
-- ##### JPA (EclipseLink)
-- ##### JSP
-- ##### Boostrap 
+## Tecnologías usadas:
+
+- ##### TypeScript <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="20" height="20"/> </a>
+- ##### Node.js <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="20" height="20"/> </a>
+- ##### Firebase 
+- ##### NoSQL
 
 ## Arquitectura:
-Se sigue el modelo MVC para trabajar por capas, principalmente las de Logica y Persistencia.
+Se sigue el modelo MVC para trabajar por capas.
 
 ## Base de Datos:
-Utilización de MySQL <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30"/> </a> mediante el servicio de Clever Cloud.
-
-## Docker <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>:
-La app se dockerizó para su posterior despliegue.
-
-## Diagrama UML:
-Se adjunta el diagrama UML donde se muestran las distintas relaciones de clases.
-
-https://drive.google.com/file/d/13NLkbEsxkjllju42LSSjwZ-1V499CiKj/view?usp=sharing
-
+Utilización de NoSQL mediante el servicio de Firebase. Se utiliza una Real Time Database para que los usuarios puedan conversar en tiempo real.
