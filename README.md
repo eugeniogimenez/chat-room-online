@@ -9,7 +9,7 @@ Se puede generar una sala nueva o retomar una anterior usando un ID que la misma
 La dirección de la app es: https://chat-room-online.onrender.com
 
 La sala de prueba es:
-##### Room de prueba: 1234
+##### Room de prueba: 1424
 
 > IMPORTANTE: al usarse un servidor de pruebas (Clever Cloud) se debe tener paciencia en cuanto a la carga de información ya que puede tener demoras. IMPORTANTE: al usarse un servidor de pruebas (Clever Cloud) se debe tener paciencia en cuanto a la carga de información ya que puede tener demoras.
 
